@@ -1,0 +1,90 @@
+
+.gallery-slider,
+.gallery-bg .wrapper {
+	position: relative;
+}
+
+.gallery-bg .wrapper {
+	padding-top: 175px;
+}
+
+.gallery-slider .slide {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s
+}
+
+.gallery-slider .active {
+	opacity: 1;
+    transition: opacity .3s;
+}
+
+.gallery-bg {
+	height: 280px;
+}
+
+.gallery-arrow {
+	position: absolute;
+    cursor: pointer;
+    top: 50%;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(241, 224, 65);
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: center;
+    border-radius: 50%;
+    transition: background-color .2s;
+}
+
+#prev {
+	background-image: url(../images/arrow-left.png);
+	left: 20px;
+}
+
+#next {
+	background-image: url(../images/arrow-right.png);
+	right: 20px;
+}
+
+#cards {
+	margin-top: 80px;
+}
+#mozaika #services {
+	margin-top: 80px;
+}
+#schelkovo #services {
+	margin-top: 80px;
+}
+.gallary-dots {
+	position: absolute;
+	bottom: -175px;
+	left: 0;
+    width: 100%;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+	z-index: 5;
+	
+}
+
+.gallary-dots .dot {
+    cursor: pointer;
+    height: 5px;
+    width: 30px;
+    margin: 0 10px;
+    border-radius: 3px;
+    display: inline-block;
+	transition: background-color,transform .4s,-webkit-transform .4s;
+	background-color: #fff;
+}
+
+.gallary-dots .dot-active {
+    background-color: #ffd200;
+}
+
